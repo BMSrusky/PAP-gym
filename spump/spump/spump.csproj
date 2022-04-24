@@ -72,6 +72,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MVM\View\AulasGrupoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVM\View\BDClientes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -80,7 +84,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVM\View\ExerciciosView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVM\View\HomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVM\View\ModalidadesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVM\View\PlanoTreinoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVM\View\ProfessoresView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVM\View\SalasView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -102,17 +126,41 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MVM\ViewModel\AulasGrupoViewModel.cs" />
     <Compile Include="MVM\ViewModel\ClientesViewModel.cs" />
+    <Compile Include="MVM\ViewModel\ExerciciosViewModel.cs" />
     <Compile Include="MVM\ViewModel\HomeViewModel.cs" />
     <Compile Include="MVM\ViewModel\MainViewModel.cs" />
+    <Compile Include="MVM\ViewModel\ModalidadesViewModel.cs" />
+    <Compile Include="MVM\ViewModel\PlanoTreinoViewModel.cs" />
+    <Compile Include="MVM\ViewModel\ProfessoresViewModel.cs" />
+    <Compile Include="MVM\ViewModel\SalasViewModel.cs" />
+    <Compile Include="MVM\View\AulasGrupoView.xaml.cs">
+      <DependentUpon>AulasGrupoView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVM\View\BDClientes.xaml.cs">
       <DependentUpon>BDClientes.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVM\View\ClientesView.xaml.cs">
       <DependentUpon>ClientesView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVM\View\ExerciciosView.xaml.cs">
+      <DependentUpon>ExerciciosView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVM\View\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVM\View\ModalidadesView.xaml.cs">
+      <DependentUpon>ModalidadesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVM\View\PlanoTreinoView.xaml.cs">
+      <DependentUpon>PlanoTreinoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVM\View\ProfessoresView.xaml.cs">
+      <DependentUpon>ProfessoresView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVM\View\SalasView.xaml.cs">
+      <DependentUpon>SalasView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

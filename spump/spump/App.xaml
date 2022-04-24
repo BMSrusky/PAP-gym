@@ -21,6 +21,30 @@
             <DataTemplate DataType="{x:Type viewModel:ClientesViewModel}">
                 <view:ClientesView/>
             </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ProfessoresViewModel}">
+                <view:ProfessoresView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:AulasGrupoViewModel}">
+                <view:AulasGrupoView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ExerciciosViewModel}">
+                <view:ExerciciosView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ModalidadesViewModel}">
+                <view:ModalidadesView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:PlanoTreinoViewModel}">
+                <view:PlanoTreinoView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:SalasViewModel}">
+                <view:SalasView/>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

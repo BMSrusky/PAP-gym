@@ -54,32 +54,38 @@
                 <RadioButton Content="Professores"
                              Height="50"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding ProfessoresViewCommand}"/>
 
                 <RadioButton Content="Modalidades"
                              Height="50"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding ModalidadesViewCommand}"/>
 
                 <RadioButton Content="Aulas de Grupo"
                              Height="50"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding AulasGrupoViewCommand}"/>
 
                 <RadioButton Content="Exercícios"
                              Height="50"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding ExerciciosViewCommand}"/>
 
                 <RadioButton Content="Planos de Treino"
                              Height="50"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding PlanoTreinoViewCommand}"/>
 
                 <RadioButton Content="Salas"
                              Height="50"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding PlanoTreinoViewCommand}"/>
             </StackPanel>
 
             <Button x:Name="CloseMainwindow" Grid.Column="1"
