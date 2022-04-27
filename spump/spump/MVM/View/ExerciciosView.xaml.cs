@@ -22,6 +22,8 @@ namespace spump.MVM.View
     /// </summary>
     public partial class ExerciciosView : UserControl
     {
+        int codEx, series, repeticoes;
+        string nome, descanso;
         public ExerciciosView()
         {
             InitializeComponent();
@@ -92,15 +94,15 @@ namespace spump.MVM.View
             butEditar.IsEnabled = true;
             try
             {
-                //if (gridProfessores.SelectedItem != null)
-                //{
-                //    DataRowView v = (DataRowView)gridProfessores.SelectedItem;
-                //    codP = int.Parse(v[0].ToString());
-                //    nome = v[1].ToString();
-                //    dataN = v[2].ToString();
-                //    salario = double.Parse(v[4].ToString());
-                //    contacto = v[3].ToString();
-                //}
+                if (grid.SelectedItem != null)
+                {
+                    DataRowView v = (DataRowView)grid.SelectedItem;
+                    codEx = int.Parse(v[0].ToString());
+                    nome = v[1].ToString();
+                    series = int.Parse(v[2].ToString());
+                    repeticoes = int.Parse(v[4].ToString());
+                    descanso = v[3].ToString();
+                }
             }
             catch
             {

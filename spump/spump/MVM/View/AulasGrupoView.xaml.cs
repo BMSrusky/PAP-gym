@@ -22,6 +22,8 @@ namespace spump.MVM.View
     /// </summary>
     public partial class AulasGrupoView : UserControl
     {
+        int codAula, numeroSala, codP, codM;
+        string datas, hora;
         public AulasGrupoView()
         {
             InitializeComponent();
@@ -92,15 +94,16 @@ namespace spump.MVM.View
             butEditar.IsEnabled = true;
             try
             {
-                //if (gridProfessores.SelectedItem != null)
-                //{
-                //    DataRowView v = (DataRowView)gridProfessores.SelectedItem;
-                //    codP = int.Parse(v[0].ToString());
-                //    nome = v[1].ToString();
-                //    dataN = v[2].ToString();
-                //    salario = double.Parse(v[4].ToString());
-                //    contacto = v[3].ToString();
-                //}
+                if (grid.SelectedItem != null)
+                {
+                    DataRowView v = (DataRowView)grid.SelectedItem;
+                    codAula = int.Parse(v[0].ToString());
+                    datas = v[1].ToString();
+                    hora = v[2].ToString();
+                    numeroSala = int.Parse(v[3].ToString());
+                    codP = int.Parse(v[4].ToString());
+                    codM = int.Parse(v[5].ToString());
+                }
             }
             catch
             {

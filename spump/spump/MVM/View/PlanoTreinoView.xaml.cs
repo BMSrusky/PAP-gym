@@ -22,6 +22,8 @@ namespace spump.MVM.View
     /// </summary>
     public partial class PlanoTreinoView : UserControl
     {
+        int codPlano, codPP;
+        string tipo;
         public PlanoTreinoView()
         {
             InitializeComponent();
@@ -92,15 +94,13 @@ namespace spump.MVM.View
             butEditar.IsEnabled = true;
             try
             {
-                //if (gridProfessores.SelectedItem != null)
-                //{
-                //    DataRowView v = (DataRowView)gridProfessores.SelectedItem;
-                //    codP = int.Parse(v[0].ToString());
-                //    nome = v[1].ToString();
-                //    dataN = v[2].ToString();
-                //    salario = double.Parse(v[4].ToString());
-                //    contacto = v[3].ToString();
-                //}
+                if (grid.SelectedItem != null)
+                {
+                    DataRowView v = (DataRowView)grid.SelectedItem;
+                    codPlano = int.Parse(v[0].ToString());
+                    codPP = int.Parse(v[1].ToString());
+                    tipo = v[2].ToString();
+                }
             }
             catch
             {

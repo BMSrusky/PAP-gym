@@ -85,7 +85,7 @@
                              Height="50"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding PlanoTreinoViewCommand}"/>
+                             Command="{Binding SalasViewCommand}" IsChecked="False"/>
             </StackPanel>
 
             <Button x:Name="CloseMainwindow" Grid.Column="1"

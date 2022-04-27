@@ -22,6 +22,9 @@ namespace spump.MVM.View
     /// </summary>
     public partial class ModalidadesView : UserControl
     {
+        int codM, but=0;
+        string nome;
+        double valor;
         public ModalidadesView()
         {
             InitializeComponent();
@@ -49,12 +52,12 @@ namespace spump.MVM.View
 
         private void butInserir_Click(object sender, RoutedEventArgs e)
         {
-
+            but = 1;
         }
 
         private void butEditar_Click(object sender, RoutedEventArgs e)
         {
-
+            but = 2;
         }
 
         private void search_TextChanged(object sender, TextChangedEventArgs e)
@@ -92,15 +95,13 @@ namespace spump.MVM.View
             butEditar.IsEnabled = true;
             try
             {
-                //if (gridProfessores.SelectedItem != null)
-                //{
-                //    DataRowView v = (DataRowView)gridProfessores.SelectedItem;
-                //    codP = int.Parse(v[0].ToString());
-                //    nome = v[1].ToString();
-                //    dataN = v[2].ToString();
-                //    salario = double.Parse(v[4].ToString());
-                //    contacto = v[3].ToString();
-                //}
+                if (grid.SelectedItem != null)
+                {
+                    DataRowView v = (DataRowView)grid.SelectedItem;
+                    codM = int.Parse(v[0].ToString());
+                    nome = v[1].ToString();
+                    valor = double.Parse(v[2].ToString());
+                }
             }
             catch
             {
