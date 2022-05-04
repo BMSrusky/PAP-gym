@@ -23,7 +23,7 @@ namespace spump.MVM.View
     public partial class PlanoTreinoView : UserControl
     {
         int codPlano, codPP;
-        string tipo;
+        string nome, tipo;
         public PlanoTreinoView()
         {
             InitializeComponent();
@@ -99,7 +99,8 @@ namespace spump.MVM.View
                     DataRowView v = (DataRowView)grid.SelectedItem;
                     codPlano = int.Parse(v[0].ToString());
                     codPP = int.Parse(v[1].ToString());
-                    tipo = v[2].ToString();
+                    nome = v[2].ToString();
+                    tipo = v[3].ToString();
                 }
             }
             catch

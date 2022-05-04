@@ -15,7 +15,7 @@ namespace spump
 
         public BD()
         {
-            str = @"server=localhost;database=gym;userid=root;password=;SslMode=none";
+            str = @"server=localhost;database=gym;userid=root;password=aedas;SslMode=none";
             con = null;
         }
 

@@ -25,10 +25,13 @@ namespace spump.MVM.View
         double salario;
         int codP;
         string nome, dataN, contacto;
+        int but = 0;
+
         public ProfessoresView()
         {
             InitializeComponent();
             CarregaDadosGrid();
+            butEditar.IsEnabled = false;
         }
 
         private void CarregaDadosGrid()
@@ -52,12 +55,16 @@ namespace spump.MVM.View
 
         private void butInserir_Click(object sender, RoutedEventArgs e)
         {
-
+            but = 1;
+            BDProfessores c = new BDProfessores(codP, nome, dataN, salario, contacto, but);
+            c.Show();
         }
 
         private void butEditar_Click(object sender, RoutedEventArgs e)
         {
-
+            but = 2;
+            BDProfessores c = new BDProfessores(codP, nome, dataN, salario, contacto, but);
+            c.Show();
         }
 
         private void search_TextChanged(object sender, TextChangedEventArgs e)

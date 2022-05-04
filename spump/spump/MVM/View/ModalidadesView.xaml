@@ -5,14 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:spump.MVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-             Background="Transparent">
+              d:DesignHeight="500" d:DesignWidth="800">
     <StackPanel>
         <StackPanel Orientation="Horizontal">
 
             <Border CornerRadius="10"
-                            Background="#353340"
-                            Width="200" Height="40">
+                    Background="#353340"
+                    Width="200" Height="40">
 
                 <Grid>
                     <Rectangle StrokeThickness="1"/>
@@ -39,7 +38,6 @@
 
             <Button Content="Editar"
                     Margin="10,0,0,0"
-                    IsEnabled="False"
                     x:Name="butEditar" Click="butEditar_Click"
                     Style="{StaticResource ButtonTheme}"/>
         </StackPanel>
@@ -61,12 +59,18 @@
             <Border.Clip>
                 <RectangleGeometry RadiusX="10"
                                    RadiusY="10"
-                                   Rect="0,0,700,800"/>
+                                   Rect="0,0,700,400"/>
             </Border.Clip>
 
             <Grid>
                 <StackPanel Orientation="Vertical" Margin="0,0,0,0">
-                    <DataGrid x:Name="grid"  SelectionChanged="grid_SelectionChanged" AutoGeneratingColumn="grid_AutoGeneratingColumn"/>
+
+                    <DataGrid x:Name="grid"  SelectionChanged="grid_SelectionChanged" AutoGeneratingColumn="grid_AutoGeneratingColumn"
+                                  MaxHeight="400"
+                                  ScrollViewer.CanContentScroll="True" 
+                                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+
                 </StackPanel>
 
 

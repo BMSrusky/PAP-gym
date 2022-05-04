@@ -53,11 +53,15 @@ namespace spump.MVM.View
         private void butInserir_Click(object sender, RoutedEventArgs e)
         {
             but = 1;
+            BDModalidades c = new BDModalidades(codM, nome, valor, but);
+            c.Show();
         }
 
         private void butEditar_Click(object sender, RoutedEventArgs e)
         {
             but = 2;
+            BDModalidades c = new BDModalidades(codM, nome, valor, but);
+            c.Show();
         }
 
         private void search_TextChanged(object sender, TextChangedEventArgs e)

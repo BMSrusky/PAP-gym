@@ -51,6 +51,8 @@ CREATE TABLE IF NOT EXISTS professores (
   CREATE TABLE IF NOT EXISTS clientesPorAula (
   CodCA INT PRIMARY KEY auto_increment,
   CodC INT not null,
+  CodAula int not null,
+  FOREIGN KEY (CodAula) REFERENCES aulaGrupo (CodAula) ON DELETE CASCADE,
   FOREIGN KEY (CodC) REFERENCES clientes (CodC) ON DELETE CASCADE  
   );
   
@@ -79,6 +81,7 @@ CREATE TABLE IF NOT EXISTS professores (
   CREATE TABLE IF NOT EXISTS Planos (
   CodPl int PRIMARY KEY auto_increment,
   CodPP int NOT NULL,
+  nome VARCHAR(30) not null,
   tipo varchar(30) not null
   );
   
@@ -86,30 +89,46 @@ CREATE TABLE IF NOT EXISTS professores (
   CodPP int PRIMARY KEY auto_increment,
   quantidade int not null,
   CodEx INT not null,
-  CodPl INT not null,
-  FOREIGN KEY (CodPl) REFERENCES Planos (CodPl) ON DELETE CASCADE,
   FOREIGN KEY (CodEx) REFERENCES Exercicios (CodEx) ON DELETE CASCADE
   );
 
-insert into professores values(1, "Pedro Pinto", "1990/07/12", 916212345, 500.50);
-insert into professores values(2, "José Faria", "1995/08/21", 916212345, 500.50);
-insert into professores values(3, "Luis Robalo", "1998/09/30", 916212345, 500.50);
-insert into professores values(4, "Pedro Pinto", "1990/07/12", 916212345, 500.50);
-insert into professores values(5, "José Faria", "1995/08/21", 916212345, 500.50);
-insert into professores values(6, "Luis Robalo", "1998/09/30", 916212345, 500.50);
-insert into professores values(7, "Pedro Pinto", "1990/07/12", 916212345, 500.50);
-insert into professores values(8, "José Faria", "1995/08/21", 916212345, 500.50);
-insert into professores values(9, "Luis Robalo", "1998/09/30", 916212345, 500.50);
+insert into professores values(null, "Pedro Pinto", "1990/07/12", 916212345, 500.50);
+insert into professores values(null, "José Faria", "1995/08/21", 916212345, 500.50);
+insert into professores values(null, "Luis Robalo", "1998/09/30", 916212345, 500.50);
+insert into professores values(null, "Bruno Felgueiras", "1990/07/12", 916212345, 500.50);
+insert into professores values(null, "Tony das Bicicletas", "1995/08/21", 916212345, 500.50);
+insert into professores values(null, "Luís Pedreiro", "1998/09/30", 916212345, 500.50);
+insert into professores values(null, "Nelson Gomes", "1990/07/12", 916212345, 500.50);
+insert into professores values(null, "João Pedrosa", "1995/08/21", 916212345, 500.50);
+insert into professores values(null, "Rafael Faneca", "1998/09/30", 916212345, 500.50);
+insert into professores values(null, "Antonio Marradas", "1990/07/12", 916212345, 500.50);
+insert into professores values(null, "João Angola", "1995/08/21", 916212345, 500.50);
+insert into professores values(null, "Zé Angola", "1998/09/30", 916212345, 500.50);
+insert into professores values(null, "Danso Rodrigues", "1990/07/12", 916212345, 500.50);
+insert into professores values(null, "Adolfo Manel", "1995/08/21", 916212345, 500.50);
+insert into professores values(null, "Helder Pente", "1998/09/30", 916212345, 500.50);
+insert into professores values(null, "Francisco Farreco", "1990/07/12", 916212345, 500.50);
+insert into professores values(null, "Julia Palha", "1995/08/21", 916212345, 500.50);
+insert into professores values(null, "Catarina Magalhães", "1998/09/30", 916212345, 500.50);
 
-insert into clientes values(1, "Bruno Silva", "2004/12/10", "brunomiguelsilva04@hotmail.com", 916277685);
-insert into clientes values(2, "Lourenço Oliveira", "2004/02/09", "brunolourenco04@hotmail.com", 916297685);
-insert into clientes values(3, "Álvaro Carvalho", "2003/06/18", "alvarocarvalho03@hotmail.com", 916278685);
-insert into clientes values(4, "Bruno Silva", "2004/12/10", "brunomiguelsilva04@hotmail.com", 916277685);
-insert into clientes values(5, "Lourenço Oliveira", "2004/02/09", "brunolourenco04@hotmail.com", 916297685);
-insert into clientes values(6, "Álvaro Carvalho", "2003/06/18", "alvarocarvalho03@hotmail.com", 916278685);
-insert into clientes values(7, "Bruno Silva", "2004/12/10", "brunomiguelsilva04@hotmail.com", 916277685);
-insert into clientes values(8, "Lourenço Oliveira", "2004/02/09", "brunolourenco04@hotmail.com", 916297685);
-insert into clientes values(9, "Álvaro Carvalho", "2003/06/18", "alvarocarvalho03@hotmail.com", 916278685);
+insert into clientes values(null, "Bruno Silva", "2004/12/10", "brunomiguelsilva04@hotmail.com", 916277685);
+insert into clientes values(null, "Lourenço Oliveira", "2004/02/09", "brunolourenco04@hotmail.com", 916297685);
+insert into clientes values(null, "Álvaro Carvalho", "2003/06/18", "alvarocarvalho03@hotmail.com", 916278685);
+insert into clientes values(null, "Chico Pilotas", "2004/12/10", "chicopilotas010@live.com.pt", 916277685);
+insert into clientes values(null, "Leandro Casa Nova", "2004/02/09", "leandronova@gmail.com", 916297685);
+insert into clientes values(null, "Rute Marlene", "2003/06/18", "alvarocarvalho03@hotmail.com", 916278685);
+insert into clientes values(null, "Kim Roscas", "2004/12/10", "brunomiguelsilva04@hotmail.com", 916277685);
+insert into clientes values(null, "Mariana Abreu", "2004/02/09", "brunolourenco04@hotmail.com", 916297685);
+insert into clientes values(null, "Manuel Bertão", "2003/06/18", "alvarocarvalho03@hotmail.com", 916278685);
+insert into clientes values(null, "Guita Pimpolho", "2004/12/10", "brunomiguelsilva04@hotmail.com", 916277685);
+insert into clientes values(null, "Angelica Flores", "2004/02/09", "brunolourenco04@hotmail.com", 916297685);
+insert into clientes values(null, "Raimunda Pires", "2003/06/18", "alvarocarvalho03@hotmail.com", 916278685);
+insert into clientes values(null, "Valentina Concertina", "2004/12/10", "brunomiguelsilva04@hotmail.com", 916277685);
+insert into clientes values(null, "Teresa Silva", "2004/02/09", "brunolourenco04@hotmail.com", 916297685);
+insert into clientes values(null, "Filipe Pontes", "2003/06/18", "alvarocarvalho03@hotmail.com", 916278685);
+insert into clientes values(null, "Quim Barreiros", "2004/12/10", "brunomiguelsilva04@hotmail.com", 916277685);
+insert into clientes values(null, "Luis Araujo", "2004/02/09", "brunolourenco04@hotmail.com", 916297685);
+insert into clientes values(null, "Filomena Sofia", "2003/06/18", "alvarocarvalho03@hotmail.com", 916278685);
 
 insert into modalidades values(1, "spinning", 30.00);
 insert into modalidades values(2, "core", 30.00);
@@ -148,12 +167,15 @@ insert into exercicios values(3, "Afundo", 3, 12, "00:01:00");
 insert into exercicios values(4, "Step up", 3, 12, "00:01:00");
 insert into exercicios values(5, "Extensão de quadril em pé", 3, 12, "00:01:00");
 
-insert into musculosPorExercícios values(1, 1, 6, 1);
-insert into musculosPorExercícios values(2, 2, 6, 2);
-insert into musculosPorExercícios values(3, 2, 10, 2);
-insert into musculosPorExercícios values(4, 1, 6, 3);
-insert into musculosPorExercícios values(5, 2, 6, 11);
-insert into musculosPorExercícios values(6, 2, 6, 6);
+insert into musculosPorExercícios values(null, 1, 6, 1);
+insert into musculosPorExercícios values(null, 2, 6, 2);
+insert into musculosPorExercícios values(null, 2, 10, 2);
+insert into musculosPorExercícios values(null, 1, 6, 3);
+insert into musculosPorExercícios values(null, 3, 6, 4);
+insert into musculosPorExercícios values(null, 3, 10, 4);
+insert into musculosPorExercícios values(null, 3, 11, 4);
+insert into musculosPorExercícios values(null, 2, 10, 5);
+insert into musculosPorExercícios values(null, 2, 11, 5);
 
 
 insert into exercicios values(6, "Stiff unilateral", 3, 12, "00:01:00");
@@ -162,15 +184,18 @@ insert into exercicios values(8, "Elevação pélvica com joelhos flexionados", 
 insert into exercicios values(9, "Extensão de quadril em 45 graus", 3, 12, "00:01:00");
 insert into exercicios values(10, "Flexão de joelho deitado", 3, 12, "00:01:00");
 
-insert into musculosPorExercícios values(7, 2, 10, 6);
-insert into musculosPorExercícios values(8, 2, 11, 6);
-insert into musculosPorExercícios values(9, 3, 1, 7);
-insert into musculosPorExercícios values(10, 3, 8, 7);
-insert into musculosPorExercícios values(11, 3, 9, 7);
-insert into musculosPorExercícios values(12, 3, 9, 8);
-insert into musculosPorExercícios values(13, 3, 10, 8);
-insert into musculosPorExercícios values(14, 3, 5, 8);
-
+insert into musculosPorExercícios values(null, 2, 10, 6);
+insert into musculosPorExercícios values(null, 2, 11, 6);
+insert into musculosPorExercícios values(null, 3, 1, 7);
+insert into musculosPorExercícios values(null, 3, 8, 7);
+insert into musculosPorExercícios values(null, 3, 9, 7);
+insert into musculosPorExercícios values(null, 3, 9, 8);
+insert into musculosPorExercícios values(null, 3, 10, 8);
+insert into musculosPorExercícios values(null, 3, 5, 8);
+insert into musculosPorExercícios values(null, 2, 6, 9);
+insert into musculosPorExercícios values(null, 2, 10, 9);
+insert into musculosPorExercícios values(null, 2, 10, 10);
+insert into musculosPorExercícios values(null, 2, 11, 10);
 
 
 insert into exercicios values(11, "Slider leg Curl", 3, 12, "00:01:00");
@@ -179,9 +204,26 @@ insert into exercicios values(13, "Elevação pélvica com joelhos estendidos", 
 insert into exercicios values(14, "Elevação pélvica com pernas estendidas", 3, 12, "00:01:00");
 insert into exercicios values(15, "Mesa flexora (flexão de joelho deitado na máquina)", 3, 12, "00:01:00");
 
+insert into musculosPorExercícios values(null, 1, 11, 11);
+insert into musculosPorExercícios values(null, 2, 10, 12);
+insert into musculosPorExercícios values(null, 2, 11, 12);
+insert into musculosPorExercícios values(null, 3, 6, 13);
+insert into musculosPorExercícios values(null, 3, 10, 13);
+insert into musculosPorExercícios values(null, 3, 11, 13);
+insert into musculosPorExercícios values(null, 3, 6, 14);
+insert into musculosPorExercícios values(null, 3, 10, 14);
+insert into musculosPorExercícios values(null, 3, 11, 14);
+insert into musculosPorExercícios values(null, 1, 11, 15);
+
+
 insert into exercicios values(16, "Panturrilha burrinho (gêmeos sentado)", 3, 12, "00:01:00");
 insert into exercicios values(17, "Panturrilha em pé unilateral", 3, 12, "00:01:00");
 insert into exercicios values(18, "Panturrilha em pé (bilateral)", 3, 12, "00:01:00");
+
+insert into musculosPorExercícios values(null, 1, 12, 16);
+insert into musculosPorExercícios values(null, 1, 12, 17);
+insert into musculosPorExercícios values(null, 1, 12, 18);
+
 
 insert into exercicios values(19, "Extensão de quadril", 3, 12, "00:01:00");
 insert into exercicios values(20, "Exercício Stiff", 3, 12, "00:01:00");
@@ -191,9 +233,40 @@ insert into exercicios values(23, "Agachamento hack machine", 3, 12, "00:01:00")
 insert into exercicios values(24, "Agachamento profundo", 3, 12, "00:01:00");
 insert into exercicios values(25, "Agachamento com uma das pernas (búlgaro)", 3, 12, "00:01:00");
 
+insert into musculosPorExercícios values(NULL, 1, 11, 19);
+insert into musculosPorExercícios values(NULL, 2, 10, 20);
+insert into musculosPorExercícios values(NULL, 2, 11, 20);
+insert into musculosPorExercícios values(NULL, 3, 6, 21);
+insert into musculosPorExercícios values(NULL, 3, 10, 21);
+insert into musculosPorExercícios values(NULL, 3, 11, 21);
+insert into musculosPorExercícios values(NULL, 3, 10, 22);
+insert into musculosPorExercícios values(NULL, 3, 11, 22);
+insert into musculosPorExercícios values(NULL, 3, 6, 22);
+insert into musculosPorExercícios values(NULL, 3, 10, 23);
+insert into musculosPorExercícios values(NULL, 3, 11, 23);
+insert into musculosPorExercícios values(NULL, 3, 6, 23);
+insert into musculosPorExercícios values(NULL, 3, 10, 24);
+insert into musculosPorExercícios values(NULL, 3, 11, 24);
+insert into musculosPorExercícios values(NULL, 3, 6, 24);
+insert into musculosPorExercícios values(NULL, 3, 1, 25);
+insert into musculosPorExercícios values(NULL, 3, 11, 25);
+insert into musculosPorExercícios values(NULL, 3, 6, 25);
+
+
 insert into exercicios values(26, "Supino declinado com halteres", 3, 12, "00:01:00");
 insert into exercicios values(27, "Supino declinado com barra", 3, 12, "00:01:00");
 insert into exercicios values(28, "Apoio com step (flexão de braços)", 3, 12, "00:01:00");
+
+insert into musculosPorExercícios values(null, 3, 1, 26);
+insert into musculosPorExercícios values(null, 3, 2, 26);
+insert into musculosPorExercícios values(null, 3, 8, 26);
+insert into musculosPorExercícios values(null, 3, 1, 27);
+insert into musculosPorExercícios values(null, 3, 2, 27);
+insert into musculosPorExercícios values(null, 3, 8, 27);
+insert into musculosPorExercícios values(null, 3, 1, 28);
+insert into musculosPorExercícios values(null, 3, 2, 28);
+insert into musculosPorExercícios values(null, 3, 8, 28);
+
 
 insert into exercicios values(29, "Puxador no pulley", 3, 12, "00:01:00");
 insert into exercicios values(30, "Remada sentada no pulley", 3, 12, "00:01:00");
@@ -205,6 +278,31 @@ insert into exercicios values(35, "Elevação I-Y-T", 3, 12, "00:01:00");
 insert into exercicios values(36, "Barra fixa (pegada supinada)", 3, 12, "00:01:00");
 insert into exercicios values(37, "Remada Curvada (pegada pronada)", 3, 12, "00:01:00");
 
+insert into musculosPorExercícios values(NULL, 2, 3, 29);
+insert into musculosPorExercícios values(NULL, 2, 9, 29);
+insert into musculosPorExercícios values(NULL, 4, 9, 30);
+insert into musculosPorExercícios values(NULL, 4, 1, 30);
+insert into musculosPorExercícios values(NULL, 4, 7, 30);
+insert into musculosPorExercícios values(NULL, 4, 3, 30);
+insert into musculosPorExercícios values(NULL, 2, 3, 31);
+insert into musculosPorExercícios values(NULL, 2, 9, 31);
+insert into musculosPorExercícios values(NULL, 2, 3, 32);
+insert into musculosPorExercícios values(NULL, 2, 9, 32);
+insert into musculosPorExercícios values(NULL, 2, 3, 33);
+insert into musculosPorExercícios values(NULL, 2, 9, 33);
+insert into musculosPorExercícios values(NULL, 3, 3, 34);
+insert into musculosPorExercícios values(NULL, 3, 9, 34);
+insert into musculosPorExercícios values(NULL, 3, 7, 34);
+insert into musculosPorExercícios values(NULL, 3, 3, 35);
+insert into musculosPorExercícios values(NULL, 3, 9, 35);
+insert into musculosPorExercícios values(NULL, 3, 1, 35);
+insert into musculosPorExercícios values(NULL, 3, 3, 36);
+insert into musculosPorExercícios values(NULL, 3, 9, 36);
+insert into musculosPorExercícios values(NULL, 3, 7, 36);
+insert into musculosPorExercícios values(NULL, 2, 3, 37);
+insert into musculosPorExercícios values(NULL, 2, 9, 37);
+
+
 insert into exercicios values(38, "Supino reto", 3, 12, "00:01:00");
 insert into exercicios values(39, "Desenvolvimento no Smith", 3, 12, "00:01:00");
 insert into exercicios values(40, "Peck deck ou voador peitoral", 3, 12, "00:01:00");
@@ -215,14 +313,87 @@ insert into exercicios values(44, "Puxador frente", 3, 12, "00:01:00");
 insert into exercicios values(45, "Remada sentado", 3, 12, "00:01:00");
 insert into exercicios values(46, "Voador inverso (máquina)", 3, 12, "00:01:00");
 
+insert into musculosPorExercícios values(null, 3, 8, 38);
+insert into musculosPorExercícios values(null, 3, 1, 38);
+insert into musculosPorExercícios values(null, 3, 2, 38);
+insert into musculosPorExercícios values(null, 1, 1, 39);
+insert into musculosPorExercícios values(null, 2, 1, 40);
+insert into musculosPorExercícios values(null, 2, 2, 40);
+insert into musculosPorExercícios values(null, 2, 1, 41);
+insert into musculosPorExercícios values(null, 2, 7, 41);
+insert into musculosPorExercícios values(null, 2, 1, 42);
+insert into musculosPorExercícios values(null, 2, 7, 42);
+insert into musculosPorExercícios values(null, 2, 1, 43);
+insert into musculosPorExercícios values(null, 2, 7, 43);
+insert into musculosPorExercícios values(null, 4, 1, 44);
+insert into musculosPorExercícios values(null, 4, 9, 44);
+insert into musculosPorExercícios values(null, 4, 7, 44);
+insert into musculosPorExercícios values(null, 4, 3, 44);
+insert into musculosPorExercícios values(null, 3, 1, 45);
+insert into musculosPorExercícios values(null, 3, 8, 45);
+insert into musculosPorExercícios values(null, 3, 7, 45);
+insert into musculosPorExercícios values(null, 2, 1, 46);
+insert into musculosPorExercícios values(null, 2, 7, 46);
+
+
 insert into exercicios values(47, "Rosca direta no cabo", 3, 12, "00:01:00");
 insert into exercicios values(48, "Rosca direta barra", 3, 12, "00:01:00");
 insert into exercicios values(49, "Rosca concentrada", 3, 12, "00:01:00");
 insert into exercicios values(50, "Barra fixa (pegada supinada)", 3, 12, "00:01:00");
-insert into exercicios values(51, "Rosca direta barra w", 3, 12, "00:01:00");
+insert into exercicios values(51, "Rosca direta barra W", 3, 12, "00:01:00");
 insert into exercicios values(52, "Rosca concentrada no Scott", 3, 12, "00:01:00");
 insert into exercicios values(53, "Rosca direta no pulley", 3, 12, "00:01:00");
 
-insert into exercicios values(54, "(flexão de braço fechado (Apoio mãos fechadas)", 3, 12, "00:01:00");
+insert into musculosPorExercícios values(null, 2, 3, 47);
+insert into musculosPorExercícios values(null, 2, 8, 47);
+insert into musculosPorExercícios values(null, 2, 3, 48);
+insert into musculosPorExercícios values(null, 2, 8, 48);
+insert into musculosPorExercícios values(null, 2, 3, 49);
+insert into musculosPorExercícios values(null, 2, 8, 49);
+insert into musculosPorExercícios values(null, 4, 1, 50);
+insert into musculosPorExercícios values(null, 4, 3, 50);
+insert into musculosPorExercícios values(null, 4, 7, 50);
+insert into musculosPorExercícios values(null, 4, 8, 50);
+insert into musculosPorExercícios values(null, 2, 3, 51);
+insert into musculosPorExercícios values(null, 2, 8, 51);
+insert into musculosPorExercícios values(null, 2, 3, 52);
+insert into musculosPorExercícios values(null, 2, 8, 52);
+insert into musculosPorExercícios values(null, 2, 3, 53);
+insert into musculosPorExercícios values(null, 2, 8, 53);
+
+
+insert into exercicios values(54, "Flexão de braço fechado (Apoio mãos fechadas)", 3, 12, "00:01:00");
 insert into exercicios values(55, "Tríceps coice com halteres", 3, 12, "00:01:00");
 insert into exercicios values(56, "Mergulho com mãos apoiadas no banco", 3, 12, "00:01:00");
+
+insert into musculosPorExercícios values(null, 2, 2, 54);
+insert into musculosPorExercícios values(null, 2, 8, 54);
+insert into musculosPorExercícios values(null, 1, 8, 55);
+insert into musculosPorExercícios values(null, 1, 8, 56);
+
+
+insert into ExerciciosPorPlano values(null, 7, 1);
+insert into ExerciciosPorPlano values(null, 7, 2);
+insert into ExerciciosPorPlano values(null, 7, 3);
+insert into ExerciciosPorPlano values(null, 7, 4);
+insert into ExerciciosPorPlano values(null, 7, 5);
+insert into ExerciciosPorPlano values(null, 7, 6);
+insert into ExerciciosPorPlano values(null, 7, 7);
+
+INSERT into planos VALUES(null, 1, "Treino Pernas", "Standard");
+INSERT into planos VALUES(null, 2, "Treino Pernas", "Standard");
+INSERT into planos VALUES(null, 3, "Treino Pernas", "Standard");
+INSERT into planos VALUES(null, 4, "Treino Pernas", "Standard");
+INSERT into planos VALUES(null, 5, "Treino Pernas", "Standard");
+INSERT into planos VALUES(null, 6, "Treino Pernas", "Standard");
+INSERT into planos VALUES(null, 7, "Treino Pernas", "Standard");
+
+
+
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "19:00:00", 1, 1, 1);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "20:00:00", 1, 2, 1);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "21:00:00", 1, 3, 1);
+
+insert into clientesPorAula values(null, 1, 1);
+insert into clientesPorAula values(null, 2, 1);
+insert into clientesPorAula values(null, 3, 1);

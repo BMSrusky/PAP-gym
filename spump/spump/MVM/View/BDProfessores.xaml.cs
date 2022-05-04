@@ -1,8 +1,10 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -16,45 +18,51 @@ using System.Windows.Shapes;
 namespace spump.MVM.View
 {
     /// <summary>
-    /// Lógica interna para BDClientes.xaml
+    /// Interaction logic for BDProfessores.xaml
     /// </summary>
-    public partial class BDClientes : Window
+    public partial class BDProfessores : Window
     {
-        int codCliente = 0, But=0;
-        string Nome = "", DataN = "", Email = "";
+        int codProfessor=0, But=0;
+        string Nome="", DataN="", Contacto="";
+        double Salario=0;
+
+        public void PontosEmVezDeVirgulas()
+        {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+        }
+
+        public BDProfessores(int codP, string nome, string dataN, double salario, string contacto, int  but)
+        {
+            InitializeComponent();
+            PontosEmVezDeVirgulas();
+
+            codProfessor = codP;
+            Nome = nome;
+            DataN = dataN;
+            Salario = salario;
+            Contacto = contacto;
+            But = but;
+
+            if (But == 2)
+            {
+                nomeTxt.Text = Nome;
+                dataTxt.Text = DataN;
+                salarioTxt.Text = Salario.ToString();
+                contactoTxt.Text = Contacto;
+            }
+        }
 
         private void closeWindow_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-        string Contacto = "";
-
-
-        public BDClientes(int codC, string nome, string dataN, string email, string contacto, int buT)
-        {
-            InitializeComponent();
-            codCliente = codC;
-            Nome = nome;
-            DataN = dataN;
-            Email = email;
-            Contacto = contacto;
-            But = buT;
-
-            if(But == 2)
-            {
-                nomeTxt.Text = Nome;
-                dataTxt.Text = DataN;
-                emailTxt.Text = Email;
-                contactoTxt.Text = Contacto;
-            }
-        }
-
         private void butConfirm_Click(object sender, RoutedEventArgs e)
         {
             BD b = new BD();
             b.LigaBD();
-            if(dataTxt.SelectedDate == null)
+            if (dataTxt.SelectedDate == null)
             {
                 MessageBox.Show("Dados Inválidos!\nAltere os valores.", "Professores");
             }
@@ -62,20 +70,20 @@ namespace spump.MVM.View
             {
                 Nome = nomeTxt.Text.ToString();
                 DataN = dataTxt.SelectedDate.Value.ToString("yyyy-MM-dd");
-                Email = emailTxt.Text;
+                Salario = double.Parse(salarioTxt.Text);
                 Contacto = contactoTxt.Text.ToString();
 
 
 
-                if (But == 1 && Nome != "" && DataN != "" && Email != "" && Contacto != "")
+                if (But == 1 && Nome != "" && DataN != "" && Salario != 0 && Contacto != "")
                 {
                     try
                     {
-                        string query = string.Format("insert into clientes values (null,'{0}','{1}','{2}','{3}');", Nome, DataN, Email, Contacto); // o número não leva pelicas
+                        string query = string.Format("insert into professores values (null,'{0}','{1}','{2}','{3}');", Nome, DataN, Contacto, Salario); // o número não leva pelicas
                         MessageBox.Show(query);
                         MySqlCommand comandoMySQL = new MySqlCommand(query, b.con); //query SQL e conexão como parâmetros
                         comandoMySQL.ExecuteNonQuery();
-                        MessageBox.Show("Cliente " + Nome + " inserido com sucesso.");
+                        MessageBox.Show("Professor " + Nome + " inserido com sucesso.", "Professores");
                         b.FechaBD();
                     }
                     catch
@@ -84,26 +92,26 @@ namespace spump.MVM.View
                     }
                     this.Close();
                 }
-                else if (But == 2 && Nome != "" && DataN != "" && Email != "" && Contacto != "")
+                else if (But == 2 && Nome != "" && DataN != "" && Salario != 0 && Contacto != "")
                 {
                     try
                     {
-                        string query = string.Format("UPDATE clientes SET nome='{0}', dataNascimento ='{1}', email ='{2}', contacto='{3}' WHERE CodC={4};", Nome, DataN, Email, Contacto, codCliente);
+                        string query = string.Format("UPDATE professores SET nome = '{0}', dataNascimento = '{1}', contacto =' {2}', salario = '{3}' WHERE CodP={4};", Nome, DataN, Contacto, Salario, codProfessor);
                         MessageBox.Show(query);
                         MySqlCommand comandoMySQL = new MySqlCommand(query, b.con); //query SQL e conexão como parâmetros
                         comandoMySQL.ExecuteNonQuery();
-                        MessageBox.Show("Cliente " + Nome + " alterado com sucesso!", "Clientes");
+                        MessageBox.Show("Professor " + Nome + " alterado com sucesso!", "Professores");
                         b.FechaBD();
                     }
                     catch
                     {
-                        MessageBox.Show("ERRO: Dados não atualizados!...", "Clientes");
+                        MessageBox.Show("ERRO: Dados não atualizados!...", "Professores");
                     }
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Dados Inválidos!\nAltere os valores.", "Clientes");
+                    MessageBox.Show("Dados Inválidos!\nAltere os valores.", "Professores");
                 }
             }
         }

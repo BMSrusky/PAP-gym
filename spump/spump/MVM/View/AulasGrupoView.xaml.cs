@@ -51,6 +51,11 @@ namespace spump.MVM.View
 
         private void butInserir_Click(object sender, RoutedEventArgs e)
         {
+            
+        }
+
+        private void ButReservar_Click(object sender, RoutedEventArgs e)
+        {
 
         }
 

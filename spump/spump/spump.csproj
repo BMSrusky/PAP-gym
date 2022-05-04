@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>spump</RootNamespace>
     <AssemblyName>spump</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -80,6 +80,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVM\View\BDModalidades.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVM\View\BDProfessores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVM\View\ClientesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -140,6 +148,12 @@
     </Compile>
     <Compile Include="MVM\View\BDClientes.xaml.cs">
       <DependentUpon>BDClientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVM\View\BDModalidades.xaml.cs">
+      <DependentUpon>BDModalidades.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVM\View\BDProfessores.xaml.cs">
+      <DependentUpon>BDProfessores.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVM\View\ClientesView.xaml.cs">
       <DependentUpon>ClientesView.xaml</DependentUpon>

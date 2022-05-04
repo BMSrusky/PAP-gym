@@ -62,12 +62,16 @@
             <Border.Clip>
                 <RectangleGeometry RadiusX="10"
                                    RadiusY="10"
-                                   Rect="0,0,700,800"/>
+                                   Rect="0,0,700,400"/>
             </Border.Clip>
 
             <Grid>
                 <StackPanel Orientation="Vertical" Margin="0,0,0,0">
-                    <DataGrid x:Name="gridProfessores"  SelectionChanged="gridProfessores_SelectionChanged" AutoGeneratingColumn="gridProfessores_AutoGeneratingColumn"/>
+                    <DataGrid x:Name="gridProfessores"  SelectionChanged="gridProfessores_SelectionChanged" AutoGeneratingColumn="gridProfessores_AutoGeneratingColumn"
+                                                                MaxHeight="400"
+                                  ScrollViewer.CanContentScroll="True" 
+                                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                  ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
                 </StackPanel>
 
 

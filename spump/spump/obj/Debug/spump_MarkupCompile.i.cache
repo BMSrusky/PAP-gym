@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\xampp\htdocs\git pap\PAP-gym\spump\spump\obj\Debug\
+C:\xampp\htdocs\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\
 spump
 none
 false
 DEBUG;TRACE
-C:\xampp\htdocs\git pap\PAP-gym\spump\spump\App.xaml
-14482897387
+C:\xampp\htdocs\PAP-gym-main (2)\PAP-gym-main\spump\spump\App.xaml
+16-703258470
 
-2798034316
-14208522174
-MainWindow.xaml;MVM\View\AulasGrupoView.xaml;MVM\View\BDClientes.xaml;MVM\View\ClientesView.xaml;MVM\View\ExerciciosView.xaml;MVM\View\HomeView.xaml;MVM\View\ModalidadesView.xaml;MVM\View\PlanoTreinoView.xaml;MVM\View\ProfessoresView.xaml;MVM\View\SalasView.xaml;Theme\ButtonTheme.xaml;Theme\CloseButtonTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\SearchBoxTheme.xaml;
+321984566637
+14464236576
+MainWindow.xaml;MVM\View\AulasGrupoView.xaml;MVM\View\BDClientes.xaml;MVM\View\BDModalidades.xaml;MVM\View\BDProfessores.xaml;MVM\View\ClientesView.xaml;MVM\View\ExerciciosView.xaml;MVM\View\HomeView.xaml;MVM\View\ModalidadesView.xaml;MVM\View\PlanoTreinoView.xaml;MVM\View\ProfessoresView.xaml;MVM\View\SalasView.xaml;Theme\ButtonTheme.xaml;Theme\CloseButtonTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\SearchBoxTheme.xaml;
 
-True
+False
 

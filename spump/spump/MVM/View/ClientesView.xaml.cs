@@ -28,11 +28,13 @@ namespace spump.MVM.View
         int codC = 0;
 
         int buT = 0;
+        int verifica = 0;
 
         public ClientesView()
         {
             InitializeComponent();
             CarregaDadosGrid();
+            butEditar.IsEnabled = false;
         }
 
 
@@ -59,15 +61,19 @@ namespace spump.MVM.View
         private void butInserir_Click(object sender, RoutedEventArgs e)
         {
             buT = 1;
+            verifica = 1;
+            MessageBox.Show(verifica.ToString());
             BDClientes c = new BDClientes(codC, nome, dataN, email, contacto, buT);
             c.Show();
         }
 
         private void butEditar_Click(object sender, RoutedEventArgs e)
         {
+            verifica = 1;
             buT = 2;
-            BDClientes d = new BDClientes(codC, nome, dataN, email, contacto, buT);
-            d.Show();
+            MessageBox.Show(verifica.ToString());
+            BDClientes c = new BDClientes(codC, nome, dataN, email, contacto, buT);
+            c.Show();
         }
 
         private void SearchClientes_TextChanged(object sender, TextChangedEventArgs e)
@@ -100,9 +106,29 @@ namespace spump.MVM.View
             }
         }
 
+        private void UserControl_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (verifica == 1 && Application.)
+            {
+                CarregaDadosGrid();
+                verifica = 0;
+                MessageBox.Show(verifica.ToString());
+            }
+        }
+
         private void DataClientes_LostFocus(object sender, RoutedEventArgs e)
         {
-            butEditar.IsEnabled = false;
+
+        }
+
+        private void DataClientes_SourceUpdated(object sender, DataTransferEventArgs e)
+        {
+
+        }
+
+        private void UserControl_FocusableChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+
         }
 
         private void dataClientes_SelectionChanged(object sender, SelectionChangedEventArgs e)
