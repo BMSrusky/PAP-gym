@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\xampp\htdocs\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\
 spump
 none
 false
 DEBUG;TRACE
-C:\xampp\htdocs\PAP-gym-main (2)\PAP-gym-main\spump\spump\App.xaml
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\App.xaml
 16-703258470
 
 281622669639
-6792297503
+671082390797
 MainWindow.xaml;MVM\View\AulasGrupoView.xaml;MVM\View\BDClientes.xaml;MVM\View\BDModalidades.xaml;MVM\View\BDProfessores.xaml;MVM\View\ClientesView.xaml;MVM\View\ExerciciosView.xaml;MVM\View\HomeView.xaml;MVM\View\ModalidadesView.xaml;MVM\View\PlanoTreinoView.xaml;MVM\View\ProfessoresView.xaml;MVM\View\SalasView.xaml;Theme\ButtonTheme.xaml;Theme\CloseButtonTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\SearchBoxTheme.xaml;
 
 False

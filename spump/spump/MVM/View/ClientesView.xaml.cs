@@ -108,12 +108,7 @@ namespace spump.MVM.View
 
         private void UserControl_MouseMove(object sender, MouseEventArgs e)
         {
-            if (verifica == 1 && Application.)
-            {
-                CarregaDadosGrid();
-                verifica = 0;
-                MessageBox.Show(verifica.ToString());
-            }
+
         }
 
         private void DataClientes_LostFocus(object sender, RoutedEventArgs e)
