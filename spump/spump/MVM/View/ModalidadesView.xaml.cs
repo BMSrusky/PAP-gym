@@ -25,6 +25,8 @@ namespace spump.MVM.View
         int codM, but=0;
         string nome;
         double valor;
+        int verifica = 0;
+
         public ModalidadesView()
         {
             InitializeComponent();
@@ -52,6 +54,7 @@ namespace spump.MVM.View
 
         private void butInserir_Click(object sender, RoutedEventArgs e)
         {
+            verifica = 1;
             but = 1;
             BDModalidades c = new BDModalidades(codM, nome, valor, but);
             c.Show();
@@ -59,6 +62,7 @@ namespace spump.MVM.View
 
         private void butEditar_Click(object sender, RoutedEventArgs e)
         {
+            verifica = 1;
             but = 2;
             BDModalidades c = new BDModalidades(codM, nome, valor, but);
             c.Show();
@@ -89,6 +93,28 @@ namespace spump.MVM.View
                 DataGridTextColumn coluna = e.Column as DataGridTextColumn;
                 Binding binding = coluna.Binding as Binding;
                 binding.StringFormat = "yyyy-MM-dd";
+
+            }
+        }
+
+        private void UserControl_MouseMove(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                if (Application.Current.Windows.OfType<BDModalidades>().Any())
+                {
+                }
+                else
+                {
+                    if (verifica == 1)
+                    {
+                        CarregaDadosGrid();
+                        verifica = 0;
+                    }
+                }
+            }
+            catch
+            {
 
             }
         }

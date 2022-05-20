@@ -22,7 +22,7 @@ namespace spump.MVM.View
     /// </summary>
     public partial class PlanoTreinoView : UserControl
     {
-        int codPlano, codPP;
+        int codPlano, codPP, verifica = 0;
         string nome, tipo;
         public PlanoTreinoView()
         {
@@ -51,7 +51,8 @@ namespace spump.MVM.View
 
         private void butInserir_Click(object sender, RoutedEventArgs e)
         {
-
+            BDPlanoTreino c = new BDPlanoTreino();
+            c.Show();
         }
 
         private void butEditar_Click(object sender, RoutedEventArgs e)
@@ -86,6 +87,29 @@ namespace spump.MVM.View
                 binding.StringFormat = "yyyy-MM-dd";
 
             }
+        }
+
+        private void UserControl_MouseMove(object sender, MouseEventArgs e)
+        {
+            //try
+            //{
+            //    if (Application.Current.Windows.OfType<BDPlano>().Any())
+            //    {
+
+            //    }
+            //    else
+            //    {
+            //        if (verifica == 1)
+            //        {
+            //            CarregaDadosGrid();
+            //            verifica = 0;
+            //        }
+            //    }
+            //}
+            //catch
+            //{
+
+            //}
         }
 
         private void grid_SelectionChanged(object sender, SelectionChangedEventArgs e)

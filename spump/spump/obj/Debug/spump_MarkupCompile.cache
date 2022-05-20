@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\App.xaml
-16-703258470
+21-862214454
 
-281622669639
+33861156075
 671082390797
-MainWindow.xaml;MVM\View\AulasGrupoView.xaml;MVM\View\BDClientes.xaml;MVM\View\BDModalidades.xaml;MVM\View\BDProfessores.xaml;MVM\View\ClientesView.xaml;MVM\View\ExerciciosView.xaml;MVM\View\HomeView.xaml;MVM\View\ModalidadesView.xaml;MVM\View\PlanoTreinoView.xaml;MVM\View\ProfessoresView.xaml;MVM\View\SalasView.xaml;Theme\ButtonTheme.xaml;Theme\CloseButtonTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\SearchBoxTheme.xaml;
+MainWindow.xaml;MVM\View\AulasGrupoView.xaml;MVM\View\BDAulasDeGrupo.xaml;MVM\View\BDClientes.xaml;MVM\View\BDExercicios.xaml;MVM\View\BDModalidades.xaml;MVM\View\BDPlanoTreino.xaml;MVM\View\BDProfessores.xaml;MVM\View\BDReservas.xaml;MVM\View\BDSalas.xaml;MVM\View\ClientesView.xaml;MVM\View\ExerciciosView.xaml;MVM\View\HomeView.xaml;MVM\View\ModalidadesView.xaml;MVM\View\PlanoTreinoView.xaml;MVM\View\ProfessoresView.xaml;MVM\View\SalasView.xaml;Theme\ButtonTheme.xaml;Theme\CloseButtonTheme.xaml;Theme\MenuButtonTheme.xaml;Theme\SearchBoxTheme.xaml;
 
 False
 

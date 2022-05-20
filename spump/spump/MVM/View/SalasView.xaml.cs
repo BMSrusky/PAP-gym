@@ -22,7 +22,7 @@ namespace spump.MVM.View
     /// </summary>
     public partial class SalasView : UserControl
     {
-        int numeroSala, limite;
+        int numeroSala, limite, verifica = 0, buT = 0;
         string nome;
         public SalasView()
         {
@@ -49,14 +49,50 @@ namespace spump.MVM.View
             b.FechaBD();
         }
 
-        private void butInserir_Click(object sender, RoutedEventArgs e)
+        private void UserControl_MouseMove(object sender, MouseEventArgs e)
         {
 
         }
 
+        private void butInserir_Click(object sender, RoutedEventArgs e)
+        {
+            verifica = 1;
+            MessageBox.Show(verifica.ToString());
+            buT = 1;
+            BDSalas c = new BDSalas(numeroSala, nome, limite, buT);
+            c.Show();
+        }
+
         private void butEditar_Click(object sender, RoutedEventArgs e)
         {
+            verifica = 1;
+            MessageBox.Show(verifica.ToString());
+            buT = 2;
+            BDSalas c = new BDSalas(numeroSala, nome, limite, buT);
+            c.Show();
+        }
 
+        private void UserControl_MouseMove_1(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                if (Application.Current.Windows.OfType<BDSalas>().Any())
+                {
+
+                }
+                else
+                {
+                    if (verifica == 1)
+                    {
+                        CarregaDadosGrid();
+                        verifica = 0;
+                    }
+                }
+            }
+            catch
+            {
+
+            }
         }
 
         private void search_TextChanged(object sender, TextChangedEventArgs e)

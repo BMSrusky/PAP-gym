@@ -76,7 +76,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVM\View\BDAulasDeGrupo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVM\View\BDClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVM\View\BDExercicios.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -84,7 +92,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVM\View\BDPlanoTreino.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVM\View\BDProfessores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVM\View\BDReservas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MVM\View\BDSalas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -146,14 +166,29 @@
     <Compile Include="MVM\View\AulasGrupoView.xaml.cs">
       <DependentUpon>AulasGrupoView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVM\View\BDAulasDeGrupo.xaml.cs">
+      <DependentUpon>BDAulasDeGrupo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVM\View\BDClientes.xaml.cs">
       <DependentUpon>BDClientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVM\View\BDExercicios.xaml.cs">
+      <DependentUpon>BDExercicios.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVM\View\BDModalidades.xaml.cs">
       <DependentUpon>BDModalidades.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MVM\View\BDPlanoTreino.xaml.cs">
+      <DependentUpon>BDPlanoTreino.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVM\View\BDProfessores.xaml.cs">
       <DependentUpon>BDProfessores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVM\View\BDReservas.xaml.cs">
+      <DependentUpon>BDReservas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVM\View\BDSalas.xaml.cs">
+      <DependentUpon>BDSalas.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVM\View\ClientesView.xaml.cs">
       <DependentUpon>ClientesView.xaml</DependentUpon>

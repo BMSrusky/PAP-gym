@@ -26,6 +26,7 @@ namespace spump.MVM.View
         int codP;
         string nome, dataN, contacto;
         int but = 0;
+        int verifica = 0;
 
         public ProfessoresView()
         {
@@ -55,6 +56,7 @@ namespace spump.MVM.View
 
         private void butInserir_Click(object sender, RoutedEventArgs e)
         {
+            verifica = 1;
             but = 1;
             BDProfessores c = new BDProfessores(codP, nome, dataN, salario, contacto, but);
             c.Show();
@@ -62,6 +64,7 @@ namespace spump.MVM.View
 
         private void butEditar_Click(object sender, RoutedEventArgs e)
         {
+            verifica = 1;
             but = 2;
             BDProfessores c = new BDProfessores(codP, nome, dataN, salario, contacto, but);
             c.Show();
@@ -84,6 +87,29 @@ namespace spump.MVM.View
                 MessageBox.Show("Não foram retornados dados!", "ERRO");
             }
             b.FechaBD();
+        }
+
+        private void UserControl_MouseMove(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                if (Application.Current.Windows.OfType<BDProfessores>().Any())
+                {
+
+                }
+                else
+                {
+                    if (verifica == 1)
+                    {
+                        CarregaDadosGrid();
+                        verifica = 0;
+                    }
+                }
+            }
+            catch
+            {
+
+            }
         }
 
         private void gridProfessores_SelectionChanged(object sender, SelectionChangedEventArgs e)

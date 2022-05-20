@@ -161,11 +161,11 @@ insert into musculos values(10, "Glúteos");
 insert into musculos values(11, "Isquiotibiais");
 insert into musculos values(12, "Gémeos");
 
-insert into exercicios values(1, "Cadeira extensora", 3, 12, "00:01:00");
-insert into exercicios values(2, "Agachamento", 3, 12, "00:01:00");
-insert into exercicios values(3, "Afundo", 3, 12, "00:01:00");
+insert into exercicios values(1, "Cadeira extensora", 1, 12, "00:01:00");
+insert into exercicios values(2, "Agachamento", 3, 15, "00:01:00");
+insert into exercicios values(3, "Afundo", 2, 12, "00:01:00");
 insert into exercicios values(4, "Step up", 3, 12, "00:01:00");
-insert into exercicios values(5, "Extensão de quadril em pé", 3, 12, "00:01:00");
+insert into exercicios values(5, "Extensão de quadril em pé", 3, 15, "00:01:00");
 
 insert into musculosPorExercícios values(null, 1, 6, 1);
 insert into musculosPorExercícios values(null, 2, 6, 2);
@@ -178,11 +178,11 @@ insert into musculosPorExercícios values(null, 2, 10, 5);
 insert into musculosPorExercícios values(null, 2, 11, 5);
 
 
-insert into exercicios values(6, "Stiff unilateral", 3, 12, "00:01:00");
-insert into exercicios values(7, "Cable pendulum", 3, 12, "00:01:00");
-insert into exercicios values(8, "Elevação pélvica com joelhos flexionados", 3, 12, "00:01:00");
+insert into exercicios values(6, "Stiff unilateral", 1, 12, "00:01:00");
+insert into exercicios values(7, "Cable pendulum", 3, 15, "00:01:00");
+insert into exercicios values(8, "Elevação pélvica com joelhos flexionados", 2, 12, "00:01:00");
 insert into exercicios values(9, "Extensão de quadril em 45 graus", 3, 12, "00:01:00");
-insert into exercicios values(10, "Flexão de joelho deitado", 3, 12, "00:01:00");
+insert into exercicios values(10, "Flexão de joelho deitado", 3, 15, "00:01:00");
 
 insert into musculosPorExercícios values(null, 2, 10, 6);
 insert into musculosPorExercícios values(null, 2, 11, 6);
@@ -198,11 +198,11 @@ insert into musculosPorExercícios values(null, 2, 10, 10);
 insert into musculosPorExercícios values(null, 2, 11, 10);
 
 
-insert into exercicios values(11, "Slider leg Curl", 3, 12, "00:01:00");
-insert into exercicios values(12, "Extensão de quadril no pulley", 3, 12, "00:01:00");
-insert into exercicios values(13, "Elevação pélvica com joelhos estendidos", 3, 12, "00:01:00");
+insert into exercicios values(11, "Slider leg Curl", 1, 12, "00:01:00");
+insert into exercicios values(12, "Extensão de quadril no pulley", 3, 15, "00:01:30");
+insert into exercicios values(13, "Elevação pélvica com joelhos estendidos", 2, 12, "00:02:00");
 insert into exercicios values(14, "Elevação pélvica com pernas estendidas", 3, 12, "00:01:00");
-insert into exercicios values(15, "Mesa flexora (flexão de joelho deitado na máquina)", 3, 12, "00:01:00");
+insert into exercicios values(15, "Mesa flexora (flexão de joelho deitado na máquina)", 3, 15, "00:01:30");
 
 insert into musculosPorExercícios values(null, 1, 11, 11);
 insert into musculosPorExercícios values(null, 2, 10, 12);
@@ -216,22 +216,22 @@ insert into musculosPorExercícios values(null, 3, 11, 14);
 insert into musculosPorExercícios values(null, 1, 11, 15);
 
 
-insert into exercicios values(16, "Panturrilha burrinho (gêmeos sentado)", 3, 12, "00:01:00");
+insert into exercicios values(16, "Panturrilha burrinho (gêmeos sentado)", 1, 12, "00:02:00");
 insert into exercicios values(17, "Panturrilha em pé unilateral", 3, 12, "00:01:00");
-insert into exercicios values(18, "Panturrilha em pé (bilateral)", 3, 12, "00:01:00");
+insert into exercicios values(18, "Panturrilha em pé (bilateral)", 2, 15, "00:01:30");
 
 insert into musculosPorExercícios values(null, 1, 12, 16);
 insert into musculosPorExercícios values(null, 1, 12, 17);
 insert into musculosPorExercícios values(null, 1, 12, 18);
 
 
-insert into exercicios values(19, "Extensão de quadril", 3, 12, "00:01:00");
+insert into exercicios values(19, "Extensão de quadril", 3, 12, "00:02:00");
 insert into exercicios values(20, "Exercício Stiff", 3, 12, "00:01:00");
-insert into exercicios values(21, "Leg Press", 3, 12, "00:01:00");
-insert into exercicios values(22, "Agachamento 90º", 3, 12, "00:01:00");
-insert into exercicios values(23, "Agachamento hack machine", 3, 12, "00:01:00");
-insert into exercicios values(24, "Agachamento profundo", 3, 12, "00:01:00");
-insert into exercicios values(25, "Agachamento com uma das pernas (búlgaro)", 3, 12, "00:01:00");
+insert into exercicios values(21, "Leg Press", 1, 12, "00:01:30");
+insert into exercicios values(22, "Agachamento 90º", 3, 12, "00:02:00");
+insert into exercicios values(23, "Agachamento hack machine", 2, 12, "00:01:00");
+insert into exercicios values(24, "Agachamento profundo", 3, 12, "00:01:30");
+insert into exercicios values(25, "Agachamento com uma das pernas (búlgaro)", 3, 15, "00:02:00");
 
 insert into musculosPorExercícios values(NULL, 1, 11, 19);
 insert into musculosPorExercícios values(NULL, 2, 10, 20);
@@ -253,9 +253,9 @@ insert into musculosPorExercícios values(NULL, 3, 11, 25);
 insert into musculosPorExercícios values(NULL, 3, 6, 25);
 
 
-insert into exercicios values(26, "Supino declinado com halteres", 3, 12, "00:01:00");
-insert into exercicios values(27, "Supino declinado com barra", 3, 12, "00:01:00");
-insert into exercicios values(28, "Apoio com step (flexão de braços)", 3, 12, "00:01:00");
+insert into exercicios values(26, "Supino declinado com halteres", 1, 12, "00:01:00");
+insert into exercicios values(27, "Supino declinado com barra", 3, 15, "00:01:30");
+insert into exercicios values(28, "Apoio com step (flexão de braços)", 2, 12, "00:02:00");
 
 insert into musculosPorExercícios values(null, 3, 1, 26);
 insert into musculosPorExercícios values(null, 3, 2, 26);
@@ -269,14 +269,14 @@ insert into musculosPorExercícios values(null, 3, 8, 28);
 
 
 insert into exercicios values(29, "Puxador no pulley", 3, 12, "00:01:00");
-insert into exercicios values(30, "Remada sentada no pulley", 3, 12, "00:01:00");
-insert into exercicios values(31, "Remada pegada pronada", 3, 12, "00:01:00");
+insert into exercicios values(30, "Remada sentada no pulley", 3, 15, "00:01:30");
+insert into exercicios values(31, "Remada pegada pronada", 1, 15, "00:02:00");
 insert into exercicios values(32, "Remada no TRX", 3, 12, "00:01:00");
-insert into exercicios values(33, "Remada pegada supinada", 3, 12, "00:01:00");
-insert into exercicios values(34, "Barra fixa (pegada pronada)", 3, 12, "00:01:00");
+insert into exercicios values(33, "Remada pegada supinada", 2, 12, "00:01:30");
+insert into exercicios values(34, "Barra fixa (pegada pronada)", 3, 15, "00:02:00");
 insert into exercicios values(35, "Elevação I-Y-T", 3, 12, "00:01:00");
-insert into exercicios values(36, "Barra fixa (pegada supinada)", 3, 12, "00:01:00");
-insert into exercicios values(37, "Remada Curvada (pegada pronada)", 3, 12, "00:01:00");
+insert into exercicios values(36, "Barra fixa (pegada supinada)", 3, 15, "00:01:30");
+insert into exercicios values(37, "Remada Curvada (pegada pronada)", 1, 12, "00:02:00");
 
 insert into musculosPorExercícios values(NULL, 2, 3, 29);
 insert into musculosPorExercícios values(NULL, 2, 9, 29);
@@ -304,14 +304,14 @@ insert into musculosPorExercícios values(NULL, 2, 9, 37);
 
 
 insert into exercicios values(38, "Supino reto", 3, 12, "00:01:00");
-insert into exercicios values(39, "Desenvolvimento no Smith", 3, 12, "00:01:00");
-insert into exercicios values(40, "Peck deck ou voador peitoral", 3, 12, "00:01:00");
+insert into exercicios values(39, "Desenvolvimento no Smith", 2, 12, "00:01:30");
+insert into exercicios values(40, "Peck deck ou voador peitoral", 3, 15, "00:02:00");
 insert into exercicios values(41, "Elevação lateral com halteres", 3, 12, "00:01:00");
-insert into exercicios values(42, "Elevação lateral no cross over", 3, 12, "00:01:00");
-insert into exercicios values(43, "Voador inverso", 3, 12, "00:01:00");
-insert into exercicios values(44, "Puxador frente", 3, 12, "00:01:00");
-insert into exercicios values(45, "Remada sentado", 3, 12, "00:01:00");
-insert into exercicios values(46, "Voador inverso (máquina)", 3, 12, "00:01:00");
+insert into exercicios values(42, "Elevação lateral no cross over", 1, 12, "00:01:30");
+insert into exercicios values(43, "Voador inverso", 3, 12, "00:02:00");
+insert into exercicios values(44, "Puxador frente", 2, 12, "00:01:00");
+insert into exercicios values(45, "Remada sentado", 3, 12, "00:01:30");
+insert into exercicios values(46, "Voador inverso (máquina)", 3, 15, "00:02:00");
 
 insert into musculosPorExercícios values(null, 3, 8, 38);
 insert into musculosPorExercícios values(null, 3, 1, 38);
@@ -336,13 +336,13 @@ insert into musculosPorExercícios values(null, 2, 1, 46);
 insert into musculosPorExercícios values(null, 2, 7, 46);
 
 
-insert into exercicios values(47, "Rosca direta no cabo", 3, 12, "00:01:00");
-insert into exercicios values(48, "Rosca direta barra", 3, 12, "00:01:00");
-insert into exercicios values(49, "Rosca concentrada", 3, 12, "00:01:00");
+insert into exercicios values(47, "Rosca direta no cabo", 1, 12, "00:01:00");
+insert into exercicios values(48, "Rosca direta barra", 3, 12, "00:01:30");
+insert into exercicios values(49, "Rosca concentrada", 2, 15, "00:02:00");
 insert into exercicios values(50, "Barra fixa (pegada supinada)", 3, 12, "00:01:00");
-insert into exercicios values(51, "Rosca direta barra W", 3, 12, "00:01:00");
-insert into exercicios values(52, "Rosca concentrada no Scott", 3, 12, "00:01:00");
-insert into exercicios values(53, "Rosca direta no pulley", 3, 12, "00:01:00");
+insert into exercicios values(51, "Rosca direta barra W", 3, 12, "00:01:30");
+insert into exercicios values(52, "Rosca concentrada no Scott", 1, 12, "00:02:00");
+insert into exercicios values(53, "Rosca direta no pulley", 3, 15, "00:01:00");
 
 insert into musculosPorExercícios values(null, 2, 3, 47);
 insert into musculosPorExercícios values(null, 2, 8, 47);
@@ -362,8 +362,8 @@ insert into musculosPorExercícios values(null, 2, 3, 53);
 insert into musculosPorExercícios values(null, 2, 8, 53);
 
 
-insert into exercicios values(54, "Flexão de braço fechado (Apoio mãos fechadas)", 3, 12, "00:01:00");
-insert into exercicios values(55, "Tríceps coice com halteres", 3, 12, "00:01:00");
+insert into exercicios values(54, "Flexão de braço fechado (Apoio mãos fechadas)", 2, 12, "00:01:30");
+insert into exercicios values(55, "Tríceps coice com halteres", 3, 15, "00:02:00");
 insert into exercicios values(56, "Mergulho com mãos apoiadas no banco", 3, 12, "00:01:00");
 
 insert into musculosPorExercícios values(null, 2, 2, 54);
@@ -389,10 +389,61 @@ INSERT into planos VALUES(null, 6, "Treino Pernas", "Standard");
 INSERT into planos VALUES(null, 7, "Treino Pernas", "Standard");
 
 
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "10:00:00", 1, 2, 1);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "10:00:00", 2, 3, 2);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "10:00:00", 3, 4, 8);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "10:00:00", 4, 5, 5);
+
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "11:00:00", 1, 1, 3);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "11:00:00", 2, 6, 4);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "11:00:00", 3, 7, 6);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "11:00:00", 4, 8, 7);
+
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "12:00:00", 1, 9, 9);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "12:00:00", 2, 11, 12);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "12:00:00", 3, 10, 10);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "12:00:00", 4, 12, 11);
+
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "13:00:00", 1, 14, 1);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "13:00:00", 2, 13, 2);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "13:00:00", 3, 16, 3);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "13:00:00", 4, 15, 4);
+
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "14:00:00", 1, 18, 8);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "14:00:00", 2, 17, 7);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "14:00:00", 3, 1, 6);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "14:00:00", 4, 2, 5);
+
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "15:00:00", 1, 6, 9);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "15:00:00", 2, 5, 10);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "15:00:00", 3, 4, 11);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "15:00:00", 4, 3, 12);
+
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "16:00:00", 1, 10, 4);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "16:00:00", 2, 9, 3);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "16:00:00", 3, 8, 2);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "16:00:00", 4, 7, 1);
+
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "17:00:00", 1, 11, 5);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "17:00:00", 2, 12, 6);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "17:00:00", 3, 13, 7);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "17:00:00", 4, 14, 8);
+
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "18:00:00", 1, 18, 12);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "18:00:00", 2, 17, 11);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "18:00:00", 3, 16, 10);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "18:00:00", 4, 15, 9);
 
 INSERT into aulaGrupo VALUES(null, "2022/04/28", "19:00:00", 1, 1, 1);
-INSERT into aulaGrupo VALUES(null, "2022/04/28", "20:00:00", 1, 2, 1);
-INSERT into aulaGrupo VALUES(null, "2022/04/28", "21:00:00", 1, 3, 1);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "19:00:00", 2, 2, 2);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "19:00:00", 3, 3, 3);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "19:00:00", 4, 4, 4);
+
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "20:00:00", 1, 8, 8);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "20:00:00", 2, 7, 7);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "20:00:00", 3, 6, 6);
+INSERT into aulaGrupo VALUES(null, "2022/04/28", "20:00:00", 4, 5, 5);
+
 
 insert into clientesPorAula values(null, 1, 1);
 insert into clientesPorAula values(null, 2, 1);

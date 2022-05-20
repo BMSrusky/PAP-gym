@@ -16,7 +16,7 @@
 
             <StackPanel Orientation="Vertical">
                 <TextBlock Text="Nome" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,50,0,0"/>
-                <TextBlock Text="Salário" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,60,0,0"/>
+                <TextBlock Text="Valor" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,60,0,0"/>
             </StackPanel>
 
             <StackPanel Orientation="Vertical" Margin="90,0,0,0">

@@ -60,9 +60,8 @@ namespace spump.MVM.View
 
         private void butInserir_Click(object sender, RoutedEventArgs e)
         {
-            buT = 1;
             verifica = 1;
-            MessageBox.Show(verifica.ToString());
+            buT = 1;
             BDClientes c = new BDClientes(codC, nome, dataN, email, contacto, buT);
             c.Show();
         }
@@ -71,7 +70,6 @@ namespace spump.MVM.View
         {
             verifica = 1;
             buT = 2;
-            MessageBox.Show(verifica.ToString());
             BDClientes c = new BDClientes(codC, nome, dataN, email, contacto, buT);
             c.Show();
         }
@@ -108,7 +106,25 @@ namespace spump.MVM.View
 
         private void UserControl_MouseMove(object sender, MouseEventArgs e)
         {
+            try
+            {
+                if (Application.Current.Windows.OfType<BDClientes>().Any())
+                {
 
+                }
+                else
+                {
+                    if (verifica == 1)
+                    {
+                        CarregaDadosGrid();
+                        verifica = 0;
+                    }
+                }
+            }
+            catch
+            {
+
+            }
         }
 
         private void DataClientes_LostFocus(object sender, RoutedEventArgs e)

@@ -22,8 +22,9 @@ namespace spump.MVM.View
     /// </summary>
     public partial class AulasGrupoView : UserControl
     {
-        int codAula, numeroSala, codP, codM;
+        int codAula, numeroSala, codP, codM, buT = 0;
         string datas, hora;
+
         public AulasGrupoView()
         {
             InitializeComponent();
@@ -51,17 +52,23 @@ namespace spump.MVM.View
 
         private void butInserir_Click(object sender, RoutedEventArgs e)
         {
-            
+            buT = 1;
+            BDAulasDeGrupo c = new BDAulasDeGrupo(codAula, datas, hora, numeroSala, codP, codM, buT);
+            c.Show();
         }
 
         private void ButReservar_Click(object sender, RoutedEventArgs e)
         {
-
+            buT = 3;
+            BDAulasDeGrupo c = new BDAulasDeGrupo(codAula, datas, hora, numeroSala, codP, codM, buT);
+            c.Show();
         }
 
         private void butEditar_Click(object sender, RoutedEventArgs e)
         {
-
+            buT = 2;
+            BDAulasDeGrupo c = new BDAulasDeGrupo(codAula, datas, hora, numeroSala, codP, codM, buT);
+            c.Show();
         }
 
         private void search_TextChanged(object sender, TextChangedEventArgs e)
@@ -97,6 +104,8 @@ namespace spump.MVM.View
         {
             butInserir.IsEnabled = true;
             butEditar.IsEnabled = true;
+            butReservar.IsEnabled = true;
+
             try
             {
                 if (grid.SelectedItem != null)

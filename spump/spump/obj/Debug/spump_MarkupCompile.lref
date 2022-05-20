@@ -1,10 +1,15 @@
-﻿
+﻿C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\GeneratedInternalTypeHelper.g.cs
 FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\App.xaml;;
 FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MainWindow.xaml;;
 FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MVM\View\AulasGrupoView.xaml;;
+FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MVM\View\BDAulasDeGrupo.xaml;;
 FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MVM\View\BDClientes.xaml;;
+FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MVM\View\BDExercicios.xaml;;
 FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MVM\View\BDModalidades.xaml;;
+FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MVM\View\BDPlanoTreino.xaml;;
 FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MVM\View\BDProfessores.xaml;;
+FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MVM\View\BDReservas.xaml;;
+FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MVM\View\BDSalas.xaml;;
 FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MVM\View\ClientesView.xaml;;
 FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MVM\View\ExerciciosView.xaml;;
 FC:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\MVM\View\HomeView.xaml;;

@@ -22,7 +22,7 @@ namespace spump.MVM.View
     /// </summary>
     public partial class ExerciciosView : UserControl
     {
-        int codEx, series, repeticoes;
+        int codEx, series, repeticoes, verifica = 0, buT = 0;
         string nome, descanso;
         public ExerciciosView()
         {
@@ -49,14 +49,43 @@ namespace spump.MVM.View
             b.FechaBD();
         }
 
+        private void UserControl_MouseMove(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                if (Application.Current.Windows.OfType<BDExercicios>().Any())
+                {
+
+                }
+                else
+                {
+                    if (verifica == 1)
+                    {
+                        CarregaDadosGrid();
+                        verifica = 0;
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+        }
+
         private void butInserir_Click(object sender, RoutedEventArgs e)
         {
-
+            verifica = 1;
+            buT = 1;
+            BDExercicios c = new BDExercicios(codEx, nome, series, repeticoes, descanso, buT);
+            c.Show();
         }
 
         private void butEditar_Click(object sender, RoutedEventArgs e)
         {
-
+            verifica = 1;
+            buT = 2;
+            BDExercicios c = new BDExercicios(codEx, nome, series, repeticoes, descanso, buT);
+            c.Show();
         }
 
         private void search_TextChanged(object sender, TextChangedEventArgs e)
@@ -88,6 +117,7 @@ namespace spump.MVM.View
             }
         }
 
+
         private void grid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             butInserir.IsEnabled = true;
@@ -100,8 +130,8 @@ namespace spump.MVM.View
                     codEx = int.Parse(v[0].ToString());
                     nome = v[1].ToString();
                     series = int.Parse(v[2].ToString());
-                    repeticoes = int.Parse(v[4].ToString());
-                    descanso = v[3].ToString();
+                    repeticoes = int.Parse(v[3].ToString());
+                    descanso = v[4].ToString();
                 }
             }
             catch

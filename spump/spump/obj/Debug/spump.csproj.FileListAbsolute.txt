@@ -267,30 +267,132 @@ C:\xampp\htdocs\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\BDP
 C:\xampp\htdocs\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\BDProfessores.baml
 C:\xampp\htdocs\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\BDModalidades.g.cs
 C:\xampp\htdocs\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\BDModalidades.baml
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump.csprojAssemblyReference.cache
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump.exe.config
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\Theme\ButtonTheme.baml
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\Theme\CloseButtonTheme.baml
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\Theme\MenuButtonTheme.baml
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\Theme\SearchBoxTheme.baml
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MainWindow.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\AulasGrupoView.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDClientes.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDModalidades.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDProfessores.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\ClientesView.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\ExerciciosView.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\HomeView.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\ModalidadesView.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\PlanoTreinoView.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\ProfessoresView.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\SalasView.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\App.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump_MarkupCompile.cache
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump_MarkupCompile.lref
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump.exe
-C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump.pdb
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\spump.csprojAssemblyReference.cache
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\spump.exe.config
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\Theme\ButtonTheme.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\Theme\CloseButtonTheme.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\Theme\MenuButtonTheme.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\Theme\SearchBoxTheme.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MainWindow.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\AulasGrupoView.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\BDClientes.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\BDModalidades.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\BDProfessores.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\ClientesView.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\ExerciciosView.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\HomeView.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\ModalidadesView.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\PlanoTreinoView.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\ProfessoresView.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\SalasView.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\App.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\spump_MarkupCompile.cache
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\spump_MarkupCompile.lref
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\spump.exe
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\spump.pdb
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\spump.exe.config
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\spump.exe
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\spump.pdb
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\Google.Protobuf.dll
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\Zstandard.Net.dll
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\BouncyCastle.Crypto.dll
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\Ubiety.Dns.Core.dll
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\System.Memory.dll
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\System.Buffers.dll
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\K4os.Compression.LZ4.dll
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\K4os.Hash.xxHash.dll
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\bin\Debug\MySql.Data.xml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\App.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MainWindow.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\AulasGrupoView.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\BDClientes.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\BDModalidades.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\BDProfessores.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\ClientesView.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\ExerciciosView.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\HomeView.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\ModalidadesView.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\PlanoTreinoView.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\ProfessoresView.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\SalasView.baml
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\spump.g.resources
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\spump.Properties.Resources.resources
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\spump.csproj.GenerateResource.cache
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\spump.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\spump.csproj.CopyComplete
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\BDAulasDeGrupo.g.cs
+C:\xampp\htdocs\PAP-gym-main\PAP-gym-main (2)\PAP-gym-main\spump\spump\obj\Debug\MVM\View\BDAulasDeGrupo.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\spump.exe.config
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\Theme\ButtonTheme.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\Theme\CloseButtonTheme.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\Theme\MenuButtonTheme.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\Theme\SearchBoxTheme.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MainWindow.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\AulasGrupoView.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDAulasDeGrupo.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDClientes.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDModalidades.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDProfessores.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\ClientesView.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\ExerciciosView.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\HomeView.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\ModalidadesView.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\PlanoTreinoView.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\ProfessoresView.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\SalasView.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\App.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\spump_MarkupCompile.cache
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\spump_MarkupCompile.lref
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\spump.exe
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\spump.pdb
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\spump.exe.config
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\spump.exe
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\spump.pdb
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\Google.Protobuf.dll
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\Zstandard.Net.dll
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\BouncyCastle.Crypto.dll
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\Ubiety.Dns.Core.dll
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\System.Memory.dll
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\System.Buffers.dll
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\K4os.Compression.LZ4.dll
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\K4os.Hash.xxHash.dll
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\MySql.Data.xml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\App.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MainWindow.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\AulasGrupoView.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDAulasDeGrupo.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDClientes.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDModalidades.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDProfessores.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\ClientesView.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\ExerciciosView.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\HomeView.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\ModalidadesView.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\PlanoTreinoView.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\ProfessoresView.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\SalasView.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\spump.g.resources
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\spump.Properties.Resources.resources
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\spump.csproj.GenerateResource.cache
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\spump.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\spump.csproj.CopyComplete
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDExercicios.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDExercicios.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDSalas.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDSalas.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDReservas.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDReservas.baml
+C:\xampp\htdocs\pap-gym-main\spump\spump\bin\Debug\MySql.Data.dll
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\spump.csproj.AssemblyReference.cache
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\spump.csproj.SuggestedBindingRedirects.cache
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDPlanoTreino.g.cs
+C:\xampp\htdocs\pap-gym-main\spump\spump\obj\Debug\MVM\View\BDPlanoTreino.baml
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\bin\Debug\spump.exe.config
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\bin\Debug\spump.exe
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\bin\Debug\spump.pdb
@@ -305,12 +407,44 @@ C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\bin\Debug\System.Buffers.dll
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\bin\Debug\K4os.Compression.LZ4.dll
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\bin\Debug\K4os.Hash.xxHash.dll
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\bin\Debug\MySql.Data.xml
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump.csprojAssemblyReference.cache
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump.exe.config
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\Theme\ButtonTheme.baml
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\Theme\CloseButtonTheme.baml
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\Theme\MenuButtonTheme.baml
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\Theme\SearchBoxTheme.baml
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MainWindow.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\AulasGrupoView.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDAulasDeGrupo.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDClientes.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDExercicios.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDModalidades.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDPlanoTreino.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDProfessores.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDReservas.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDSalas.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\ClientesView.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\ExerciciosView.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\HomeView.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\ModalidadesView.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\PlanoTreinoView.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\ProfessoresView.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\SalasView.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\App.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump_MarkupCompile.cache
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump_MarkupCompile.lref
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\App.baml
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MainWindow.baml
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\AulasGrupoView.baml
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDAulasDeGrupo.baml
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDClientes.baml
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDExercicios.baml
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDModalidades.baml
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDPlanoTreino.baml
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDProfessores.baml
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDReservas.baml
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\BDSalas.baml
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\ClientesView.baml
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\ExerciciosView.baml
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\MVM\View\HomeView.baml
@@ -323,3 +457,5 @@ C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump.Properties.Resou
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump.csproj.GenerateResource.cache
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump.csproj.CoreCompileInputs.cache
 C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump.csproj.CopyComplete
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump.exe
+C:\xampp\htdocs\pap-gym-git\PAP-gym\spump\spump\obj\Debug\spump.pdb

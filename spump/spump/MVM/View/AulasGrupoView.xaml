@@ -24,14 +24,8 @@
                                      TextChanged="search_TextChanged"/>
                 </Grid>
             </Border>
-
-
-
-
-
-
             <Button Content="Inserir"
-                    Margin="0,0,0,0"
+                    Margin="10,0,0,0"
                     x:Name="butInserir"
                     Click="butInserir_Click"
                     Style="{StaticResource ButtonTheme}"/>
