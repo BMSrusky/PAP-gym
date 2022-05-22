@@ -43,7 +43,7 @@
             <TextBlock x:Name="N6" Foreground="White" FontSize="14" Text="-" Width="380" Height="50" MaxWidth="300" Margin="-300,290,0,0" MouseDown="N6_MouseDown"/>
             <TextBlock x:Name="N7" Foreground="White" FontSize="14" Text="-" Width="380" Height="50" MaxWidth="300" Margin="-300,450,0,0" MouseDown="N7_MouseDown"/>
 
-            <TextBox Width="200" Height="30" Margin="-400,500,0,0"/>
+            <TextBox x:Name="planoTxt" Width="200" Height="30" Margin="-400,500,0,0"/>
             <Button Width="100" Height="30" Margin="-50,500,0,0" Background="White" Click="Button_Click"/>
         </StackPanel>
     </Border>

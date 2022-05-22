@@ -80,14 +80,14 @@ CREATE TABLE IF NOT EXISTS professores (
   
   CREATE TABLE IF NOT EXISTS Planos (
   CodPl int PRIMARY KEY auto_increment,
-  CodPP int NOT NULL,
-  nome VARCHAR(30) not null,
-  tipo varchar(30) not null
+  CodEx int NOT NULL,
+  quantidade int not null,
+  nome VARCHAR(30) not null
+  FOREIGN KEY (CodEx) REFERENCES Exercicios (CodEx) ON DELETE CASCADE
   );
   
   CREATE TABLE IF NOT EXISTS ExerciciosPorPlano (
   CodPP int PRIMARY KEY auto_increment,
-  quantidade int not null,
   CodEx INT not null,
   FOREIGN KEY (CodEx) REFERENCES Exercicios (CodEx) ON DELETE CASCADE
   );
@@ -372,21 +372,21 @@ insert into musculosPorExercícios values(null, 1, 8, 55);
 insert into musculosPorExercícios values(null, 1, 8, 56);
 
 
-insert into ExerciciosPorPlano values(null, 7, 1);
-insert into ExerciciosPorPlano values(null, 7, 2);
-insert into ExerciciosPorPlano values(null, 7, 3);
-insert into ExerciciosPorPlano values(null, 7, 4);
-insert into ExerciciosPorPlano values(null, 7, 5);
-insert into ExerciciosPorPlano values(null, 7, 6);
-insert into ExerciciosPorPlano values(null, 7, 7);
+insert into ExerciciosPorPlano values(null, 1);
+insert into ExerciciosPorPlano values(null, 2);
+insert into ExerciciosPorPlano values(null, 3);
+insert into ExerciciosPorPlano values(null, 4);
+insert into ExerciciosPorPlano values(null, 5);
+insert into ExerciciosPorPlano values(null, 6);
+insert into ExerciciosPorPlano values(null, 7);
 
-INSERT into planos VALUES(null, 1, "Treino Pernas", "Standard");
-INSERT into planos VALUES(null, 2, "Treino Pernas", "Standard");
-INSERT into planos VALUES(null, 3, "Treino Pernas", "Standard");
-INSERT into planos VALUES(null, 4, "Treino Pernas", "Standard");
-INSERT into planos VALUES(null, 5, "Treino Pernas", "Standard");
-INSERT into planos VALUES(null, 6, "Treino Pernas", "Standard");
-INSERT into planos VALUES(null, 7, "Treino Pernas", "Standard");
+INSERT into planos VALUES(null, 1, 7, "Treino Pernas");
+INSERT into planos VALUES(null, 2, 7, "Treino Pernas");
+INSERT into planos VALUES(null, 3, 7, "Treino Pernas");
+INSERT into planos VALUES(null, 4, 7, "Treino Pernas");
+INSERT into planos VALUES(null, 5, 7, "Treino Pernas");
+INSERT into planos VALUES(null, 6, 7, "Treino Pernas");
+INSERT into planos VALUES(null, 7, 7, "Treino Pernas");
 
 
 INSERT into aulaGrupo VALUES(null, "2022/04/28", "10:00:00", 1, 2, 1);

@@ -53,43 +53,43 @@ namespace spump.MVM.View
         private void N1_MouseDown(object sender, MouseButtonEventArgs e)
         {
             numero = 1;
-            MessageBox.Show(numero.ToString());
+            //MessageBox.Show(numero.ToString());
         }
 
         private void N2_MouseDown(object sender, MouseButtonEventArgs e)
         {
             numero = 2;
-            MessageBox.Show(numero.ToString());
+            //MessageBox.Show(numero.ToString());
         }
 
         private void N3_MouseDown(object sender, MouseButtonEventArgs e)
         {
             numero = 3;
-            MessageBox.Show(numero.ToString());
+            //MessageBox.Show(numero.ToString());
         }
 
         private void N4_MouseDown(object sender, MouseButtonEventArgs e)
         {
             numero = 4;
-            MessageBox.Show(numero.ToString());
+            //MessageBox.Show(numero.ToString());
         }
 
         private void N5_MouseDown(object sender, MouseButtonEventArgs e)
         {
             numero = 5;
-            MessageBox.Show(numero.ToString());
+            //MessageBox.Show(numero.ToString());
         }
 
         private void N6_MouseDown(object sender, MouseButtonEventArgs e)
         {
             numero = 6;
-            MessageBox.Show(numero.ToString());
+            //MessageBox.Show(numero.ToString());
         }
 
         private void N7_MouseDown(object sender, MouseButtonEventArgs e)
         {
             numero = 7; 
-            MessageBox.Show(numero.ToString());
+            //MessageBox.Show(numero.ToString());
         }
 
         private void exercicios_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -149,20 +149,36 @@ namespace spump.MVM.View
         }
 
         string exercicio1 = "", exercicio2 = "", exercicio3 = "", exercicio4 = "", exercicio5 = "", exercicio6 = "", exercicio7 = "";
-
+        string nomeTreino = "";
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             BD b = new BD();
-            b.LigaBD();
+
+
+            nomeTreino = planoTxt.Text;
+            exercicio1 = N1.Text;
+            exercicio2 = N2.Text;
+            exercicio3 = N3.Text;
+            exercicio4 = N4.Text;
+            exercicio5 = N5.Text;
+            exercicio6 = N6.Text;
+            exercicio7 = N7.Text;
 
             try
             {
-                string query = string.Format("insert into modalidades values (null,'{0}','{1}');", Nome, Valor); // o número não leva pelicas
-                MessageBox.Show(query);
-                MySqlCommand comandoMySQL = new MySqlCommand(query, b.con); //query SQL e conexão como parâmetros
-                comandoMySQL.ExecuteNonQuery();
-                MessageBox.Show("Plano " + Nome + " inserido com sucesso.", "Modalidades");
-                b.FechaBD();
+                for (int c = 1; c<=7; c++)
+                {
+                    b.LigaBD();
+
+
+
+                    string query = string.Format("insert into planos values (null,'{0}','{1}');", nomeTreino, ); // o número não leva pelicas
+                    MessageBox.Show(query);
+                    MySqlCommand comandoMySQL = new MySqlCommand(query, b.con); //query SQL e conexão como parâmetros
+                    comandoMySQL.ExecuteNonQuery();
+                    b.FechaBD();
+                }
+                MessageBox.Show("Plano " + nomeTreino + " inserido com sucesso.", "Planos");
             }
             catch
             {
