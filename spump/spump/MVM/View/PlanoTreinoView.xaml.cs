@@ -37,7 +37,7 @@ namespace spump.MVM.View
             try
             {
                 DataTable dt = new DataTable();
-                string query = string.Format("SELECT * FROM planos;");
+                string query = string.Format("SELECT distinct Nome, quantidade FROM planos order by Nome;");
                 MySqlDataAdapter da = new MySqlDataAdapter(query, b.con);
                 da.Fill(dt);
                 grid.ItemsSource = dt.DefaultView;// Área para fazer algo mais com a grid view...

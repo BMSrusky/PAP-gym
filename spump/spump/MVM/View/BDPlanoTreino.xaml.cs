@@ -148,7 +148,7 @@ namespace spump.MVM.View
             }
         }
 
-        string exercicio1 = "", exercicio2 = "", exercicio3 = "", exercicio4 = "", exercicio5 = "", exercicio6 = "", exercicio7 = "";
+        String[] exercicio = new String[6];
         string nomeTreino = "";
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -156,27 +156,36 @@ namespace spump.MVM.View
 
 
             nomeTreino = planoTxt.Text;
-            exercicio1 = N1.Text;
-            exercicio2 = N2.Text;
-            exercicio3 = N3.Text;
-            exercicio4 = N4.Text;
-            exercicio5 = N5.Text;
-            exercicio6 = N6.Text;
-            exercicio7 = N7.Text;
+            exercicio[0] = N1.Text;
+            exercicio[1] = N2.Text;
+            exercicio[2] = N3.Text;
+            exercicio[3] = N4.Text;
+            exercicio[4] = N5.Text;
+            exercicio[5] = N6.Text;
+            exercicio[6] = N7.Text;
 
             try
             {
-                for (int c = 1; c<=7; c++)
+                for (int c = 0; c<6; c++)
                 {
                     b.LigaBD();
+                    MySqlDataReader reader = null;
 
-
-
-                    string query = string.Format("insert into planos values (null,'{0}','{1}');", nomeTreino, ); // o número não leva pelicas
-                    MessageBox.Show(query);
-                    MySqlCommand comandoMySQL = new MySqlCommand(query, b.con); //query SQL e conexão como parâmetros
-                    comandoMySQL.ExecuteNonQuery();
+                    string query = "SELECT CodEx FROM exercicios WHERE nome='" + exercicio[c] + "'";
+                    MySqlCommand cmd = new MySqlCommand(query, b.con);
+                    reader = cmd.ExecuteReader(); //executar o reader
+                    while (reader.Read())
+                    {
+                        MessageBox.Show(reader[0].ToString());
+                    }
                     b.FechaBD();
+
+                    //b.LigaBD();
+                    //string query1 = string.Format("insert into planos values (null,'{0}','{1}');", nomeTreino, ); // o número não leva pelicas
+                    //MessageBox.Show(query1);
+                    //MySqlCommand comandoMySQL = new MySqlCommand(query, b.con); //query SQL e conexão como parâmetros
+                    //comandoMySQL.ExecuteNonQuery();
+                    //b.FechaBD();
                 }
                 MessageBox.Show("Plano " + nomeTreino + " inserido com sucesso.", "Planos");
             }

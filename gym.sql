@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS professores (
   CodPl int PRIMARY KEY auto_increment,
   CodEx int NOT NULL,
   quantidade int not null,
-  nome VARCHAR(30) not null
+  nome VARCHAR(30) not null,
   FOREIGN KEY (CodEx) REFERENCES Exercicios (CodEx) ON DELETE CASCADE
   );
   

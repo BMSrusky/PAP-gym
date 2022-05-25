@@ -91,7 +91,7 @@ namespace spump.MVM.View
         }
         private void grid_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
-            if (e.PropertyName == "dataNascimento")// Atenção ao campo da datagrid! Neste exemplo chama-se dataF.
+            if (e.PropertyName == "datas")// Atenção ao campo da datagrid! Neste exemplo chama-se dataF.
             {
                 DataGridTextColumn coluna = e.Column as DataGridTextColumn;
                 Binding binding = coluna.Binding as Binding;
